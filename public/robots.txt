@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Prioritize important pages
+Allow: /about
+Allow: /contact
+Allow: /blog/
+Allow: /privacy-policy.html
+
+# Block admin and development paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /src/
+Disallow: /.well-known/
+
+# Block duplicate content
+Disallow: /?*
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemap location
+Sitemap: https://nexusquant.engine/sitemap.xml
+
+# Crawl delay (optional, adjust based on server capacity)
+Crawl-delay: 1

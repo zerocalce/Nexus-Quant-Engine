@@ -1,5 +1,1 @@
-{
-  "name": "",
-  "description": "",
-  "requestFramePermissions": []
-}
+﻿{"name": "Nexus Quant Engine", "description": "Nexus Quant Engine is a powerful tool for quantizing deep learning models.", "requestFramePermissions": []}

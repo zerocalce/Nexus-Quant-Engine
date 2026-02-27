@@ -6,19 +6,19 @@ import { Activity, Cpu, Database, Network } from 'lucide-react';
 
 export function Dashboard() {
   return (
-    <div className="min-h-screen flex flex-col bg-quant-bg text-slate-100 font-sans">
+    <div className="flex-1 flex flex-col">
       <TickerTape />
       
-      <header className="px-8 py-6 border-b border-quant-border bg-quant-surface flex justify-between items-center">
+      <header className="px-8 py-6 border-b border-quant-border bg-quant-surface">
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-slate-100 flex items-center space-x-3">
             <Activity className="w-6 h-6 text-accent" />
-            <span>Nexus Quant Engine</span>
+            <span>Quantitative Trading Dashboard</span>
           </h1>
           <p className="text-sm font-mono text-slate-400 mt-1">Diamond Architecture / Sub-ms Execution</p>
         </div>
         
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 mt-4">
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 rounded-full bg-bullish animate-pulse" />
             <span className="text-xs font-mono text-slate-400 uppercase tracking-wider">L2 Ingestor</span>
