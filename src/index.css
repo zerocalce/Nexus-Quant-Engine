@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* High-contrast background for low-light environments */
+  --color-quant-bg: #020617;
+  --color-quant-surface: #0f172a;
+  --color-quant-border: #1e293b;
+  
+  /* Actionable Quant Colors */
+  --color-bullish: #10b981; /* Emerald 500 */
+  --color-bearish: #ef4444; /* Red 500 */
+  --color-neutral: #94a3b8; /* Slate 400 */
+  --color-accent: #818cf8;  /* Indigo 400 */
+
+  /* Shadows for depth in multi-pane layouts */
+  --shadow-quant: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* Base resets for the Quant Dark theme */
+@layer base {
+  body {
+    @apply bg-quant-bg text-slate-100 antialiased;
+    font-feature-settings: "cv02", "cv05", "cv11"; /* Inter font optimizations */
+  }
+}
